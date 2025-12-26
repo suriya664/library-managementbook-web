@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Imperial Library Management</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Yeseva+One&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <!-- DASHBOARD HEADER -->
+    <header class="dashboard-header">
+        <div class="dashboard-header-container">
+            <a href="index.html" class="dashboard-header-btn back-btn">
+                <i data-feather="arrow-left"></i>
+                Back to Home
+            </a>
+            <h2 class="dashboard-header-title">Dashboard</h2>
+            <button class="dashboard-header-btn logout-btn" id="logoutBtn">
+                <i data-feather="log-out"></i>
+                Logout
+            </button>
+        </div>
+    </header>
+
+    <!-- DASHBOARD SECTION -->
+    <section class="dashboard-section">
+        <div class="container">
+            <h1 class="dashboard-title">Library Management Dashboard</h1>
+            
+            <!-- STATISTICS CARDS -->
+            <div class="stats-grid">
+                <div class="stat-card-dashboard">
+                    <div class="stat-icon-wrapper">
+                        <i data-feather="book-open" class="stat-icon-large"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number-dashboard">10,247</h3>
+                        <p class="stat-label-dashboard">Total Books</p>
+                        <span class="stat-change positive">+12% this month</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card-dashboard">
+                    <div class="stat-icon-wrapper">
+                        <i data-feather="users" class="stat-icon-large"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number-dashboard">5,432</h3>
+                        <p class="stat-label-dashboard">Active Members</p>
+                        <span class="stat-change positive">+8% this month</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card-dashboard">
+                    <div class="stat-icon-wrapper">
+                        <i data-feather="book" class="stat-icon-large"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number-dashboard">1,234</h3>
+                        <p class="stat-label-dashboard">Books Borrowed</p>
+                        <span class="stat-change positive">+15% this month</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card-dashboard">
+                    <div class="stat-icon-wrapper">
+                        <i data-feather="star" class="stat-icon-large"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number-dashboard">15,678</h3>
+                        <p class="stat-label-dashboard">Total Reviews</p>
+                        <span class="stat-change positive">+22% this month</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DASHBOARD CONTENT GRID -->
+            <div class="dashboard-grid">
+                <!-- RECENT ACTIVITIES -->
+                <div class="dashboard-card">
+                    <div class="dashboard-card-header">
+                        <h2 class="dashboard-card-title">
+                            <i data-feather="activity"></i>
+                            Recent Activities
+                        </h2>
+                        <button class="btn-icon" title="View All">
+                            <i data-feather="more-vertical"></i>
+                        </button>
+                    </div>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i data-feather="book"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p class="activity-text"><strong>John Doe</strong> borrowed "The Art of Reading"</p>
+                                <span class="activity-time">2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i data-feather="star"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p class="activity-text"><strong>Sarah Smith</strong> reviewed "Ancient Wisdom"</p>
+                                <span class="activity-time">5 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i data-feather="user-plus"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p class="activity-text"><strong>New member</strong> registered: Emily Johnson</p>
+                                <span class="activity-time">1 day ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i data-feather="book-open"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p class="activity-text"><strong>New book</strong> added: "Modern Literature"</p>
+                                <span class="activity-time">2 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QUICK ACTIONS -->
+                <div class="dashboard-card">
+                    <div class="dashboard-card-header">
+                        <h2 class="dashboard-card-title">
+                            <i data-feather="zap"></i>
+                            Quick Actions
+                        </h2>
+                    </div>
+                    <div class="actions-grid">
+                        <button class="action-btn">
+                            <i data-feather="plus-circle"></i>
+                            <span>Add New Book</span>
+                        </button>
+                        <button class="action-btn">
+                            <i data-feather="user-plus"></i>
+                            <span>Add Member</span>
+                        </button>
+                        <button class="action-btn">
+                            <i data-feather="search"></i>
+                            <span>Search Books</span>
+                        </button>
+                        <button class="action-btn">
+                            <i data-feather="file-text"></i>
+                            <span>Generate Report</span>
+                        </button>
+                        <button class="action-btn">
+                            <i data-feather="settings"></i>
+                            <span>Settings</span>
+                        </button>
+                        <button class="action-btn">
+                            <i data-feather="download"></i>
+                            <span>Export Data</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BOOKS BY CATEGORY -->
+                <div class="dashboard-card">
+                    <div class="dashboard-card-header">
+                        <h2 class="dashboard-card-title">
+                            <i data-feather="grid"></i>
+                            Books by Category
+                        </h2>
+                    </div>
+                    <div class="category-stats">
+                        <div class="category-stat-item">
+                            <div class="category-stat-info">
+                                <span class="category-name-stat">Fiction</span>
+                                <span class="category-count-stat">1,234 books</span>
+                            </div>
+                            <div class="category-progress">
+                                <div class="progress-bar" style="width: 45%"></div>
+                            </div>
+                        </div>
+                        <div class="category-stat-item">
+                            <div class="category-stat-info">
+                                <span class="category-name-stat">Non-Fiction</span>
+                                <span class="category-count-stat">856 books</span>
+                            </div>
+                            <div class="category-progress">
+                                <div class="progress-bar" style="width: 32%"></div>
+                            </div>
+                        </div>
+                        <div class="category-stat-item">
+                            <div class="category-stat-info">
+                                <span class="category-name-stat">Mystery</span>
+                                <span class="category-count-stat">542 books</span>
+                            </div>
+                            <div class="category-progress">
+                                <div class="progress-bar" style="width: 20%"></div>
+                            </div>
+                        </div>
+                        <div class="category-stat-item">
+                            <div class="category-stat-info">
+                                <span class="category-name-stat">Sci-Fi</span>
+                                <span class="category-count-stat">678 books</span>
+                            </div>
+                            <div class="category-progress">
+                                <div class="progress-bar" style="width: 25%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RECENT BOOKS -->
+                <div class="dashboard-card">
+                    <div class="dashboard-card-header">
+                        <h2 class="dashboard-card-title">
+                            <i data-feather="bookmark"></i>
+                            Recently Added Books
+                        </h2>
+                        <button class="btn-icon" title="View All">
+                            <i data-feather="arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="recent-books-list">
+                        <div class="recent-book-item">
+                            <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=100" alt="Book" class="recent-book-image">
+                            <div class="recent-book-info">
+                                <h4 class="recent-book-title">The Art of Reading</h4>
+                                <p class="recent-book-author">By Jane Smith</p>
+                                <span class="recent-book-date">Added 2 days ago</span>
+                            </div>
+                        </div>
+                        <div class="recent-book-item">
+                            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=100" alt="Book" class="recent-book-image">
+                            <div class="recent-book-info">
+                                <h4 class="recent-book-title">Ancient Wisdom</h4>
+                                <p class="recent-book-author">By Robert Chen</p>
+                                <span class="recent-book-date">Added 3 days ago</span>
+                            </div>
+                        </div>
+                        <div class="recent-book-item">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" alt="Book" class="recent-book-image">
+                            <div class="recent-book-info">
+                                <h4 class="recent-book-title">Modern Literature</h4>
+                                <p class="recent-book-author">By Emily Johnson</p>
+                                <span class="recent-book-date">Added 5 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script>
+        // Initialize Feather Icons
+        document.addEventListener('DOMContentLoaded', function() {
+            feather.replace();
+            
+            // Logout button functionality
+            const logoutBtn = document.getElementById('logoutBtn');
+            if (logoutBtn) {
+                logoutBtn.addEventListener('click', function() {
+                    if (confirm('Are you sure you want to logout?')) {
+                        window.location.href = 'index.html';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+

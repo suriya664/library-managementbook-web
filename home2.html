@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperial Library - Welcome to Your Literary Journey</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Yeseva+One&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home2.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">Imperial Library</span>
+                <i data-feather="book-open" class="logo-icon"></i>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="home2.html" class="nav-link active">Home 2</a></li>
+                <li><a href="index.html#browse" class="nav-link">Browse Books</a></li>
+                <li><a href="index.html#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="dashboard.html" class="nav-link-btn">Dashboard</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <i data-feather="menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION 2 -->
+    <section class="hero2">
+        <div class="hero2-background">
+            <div class="hero2-overlay"></div>
+        </div>
+        <div class="hero2-content">
+            <div class="hero2-text">
+                <span class="hero2-badge">Welcome to</span>
+                <h1 class="hero2-title">Imperial Library</h1>
+                <p class="hero2-description">Your gateway to endless knowledge and literary adventures. Explore our vast collection of books from around the world.</p>
+                <div class="hero2-buttons">
+                    <a href="index.html#browse" class="btn-hero2-primary">
+                        <i data-feather="book-open"></i>
+                        Explore Collection
+                    </a>
+                    <a href="index.html#about" class="btn-hero2-secondary">
+                        <i data-feather="info"></i>
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="hero2-image">
+                <div class="hero2-book-stack">
+                    <div class="book-stack-item" style="--delay: 0s">
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=200" alt="Book">
+                    </div>
+                    <div class="book-stack-item" style="--delay: 0.2s">
+                        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=200" alt="Book">
+                    </div>
+                    <div class="book-stack-item" style="--delay: 0.4s">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200" alt="Book">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero2-scroll-indicator">
+            <i data-feather="chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Imperial Library?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i data-feather="book-open" class="feature-icon"></i>
+                    </div>
+                    <h3 class="feature-title">Vast Collection</h3>
+                    <p class="feature-description">Access over 10,000 books across all genres and categories. From classics to contemporary bestsellers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i data-feather="users" class="feature-icon"></i>
+                    </div>
+                    <h3 class="feature-title">Community Driven</h3>
+                    <p class="feature-description">Join thousands of readers sharing reviews, recommendations, and literary discussions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i data-feather="search" class="feature-icon"></i>
+                    </div>
+                    <h3 class="feature-title">Easy Discovery</h3>
+                    <p class="feature-description">Powerful search and filtering tools to help you find your next favorite book quickly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i data-feather="star" class="feature-icon"></i>
+                    </div>
+                    <h3 class="feature-title">Curated Reviews</h3>
+                    <p class="feature-description">Read authentic reviews from fellow readers to make informed reading choices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPULAR BOOKS SECTION -->
+    <section class="popular-section">
+        <div class="container">
+            <h2 class="section-title">Popular This Week</h2>
+            <div class="popular-books-grid">
+                <div class="popular-book-card">
+                    <div class="popular-book-image">
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=300" alt="The Art of Reading">
+                        <div class="popular-book-badge">#1</div>
+                    </div>
+                    <div class="popular-book-info">
+                        <h3 class="popular-book-title">The Art of Reading</h3>
+                        <p class="popular-book-author">Jane Smith</p>
+                        <div class="popular-book-rating">
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <span>5.0</span>
+                        </div>
+                        <button class="btn-card">View Details</button>
+                    </div>
+                </div>
+                <div class="popular-book-card">
+                    <div class="popular-book-image">
+                        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300" alt="Ancient Wisdom">
+                        <div class="popular-book-badge">#2</div>
+                    </div>
+                    <div class="popular-book-info">
+                        <h3 class="popular-book-title">Ancient Wisdom</h3>
+                        <p class="popular-book-author">Robert Chen</p>
+                        <div class="popular-book-rating">
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star"></i>
+                            <span>4.5</span>
+                        </div>
+                        <button class="btn-card">View Details</button>
+                    </div>
+                </div>
+                <div class="popular-book-card">
+                    <div class="popular-book-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300" alt="Modern Literature">
+                        <div class="popular-book-badge">#3</div>
+                    </div>
+                    <div class="popular-book-info">
+                        <h3 class="popular-book-title">Modern Literature</h3>
+                        <p class="popular-book-author">Emily Johnson</p>
+                        <div class="popular-book-rating">
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <span>5.0</span>
+                        </div>
+                        <button class="btn-card">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="stats-section-home2">
+        <div class="container">
+            <div class="stats-grid-home2">
+                <div class="stat-item-home2">
+                    <i data-feather="book-open" class="stat-icon-home2"></i>
+                    <h3 class="stat-number-home2">10,000+</h3>
+                    <p class="stat-label-home2">Books Available</p>
+                </div>
+                <div class="stat-item-home2">
+                    <i data-feather="users" class="stat-icon-home2"></i>
+                    <h3 class="stat-number-home2">5,000+</h3>
+                    <p class="stat-label-home2">Active Members</p>
+                </div>
+                <div class="stat-item-home2">
+                    <i data-feather="star" class="stat-icon-home2"></i>
+                    <h3 class="stat-number-home2">15,000+</h3>
+                    <p class="stat-label-home2">Reviews</p>
+                </div>
+                <div class="stat-item-home2">
+                    <i data-feather="award" class="stat-icon-home2"></i>
+                    <h3 class="stat-number-home2">500+</h3>
+                    <p class="stat-label-home2">Awards Won</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Start Your Reading Journey?</h2>
+                <p class="cta-description">Join thousands of readers and discover your next favorite book today.</p>
+                <div class="cta-buttons">
+                    <a href="index.html#browse" class="btn-primary">Browse Books</a>
+                    <a href="index.html#contact" class="btn-secondary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <a href="index.html" class="footer-logo">
+                    <span class="logo-text">Imperial Library</span>
+                    <i data-feather="book-open" class="logo-icon"></i>
+                </a>
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3 class="footer-title">About</h3>
+                        <p>Imperial Library is a premier destination for book lovers, offering an extensive collection and a vibrant community of readers.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3 class="footer-title">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="home2.html">Home 2</a></li>
+                            <li><a href="dashboard.html">Dashboard</a></li>
+                            <li><a href="index.html#browse">Browse Books</a></li>
+                            <li><a href="index.html#reviews">Reviews</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3 class="footer-title">Categories</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html#categories">Fiction</a></li>
+                            <li><a href="index.html#categories">Non-Fiction</a></li>
+                            <li><a href="index.html#categories">Mystery</a></li>
+                            <li><a href="index.html#categories">Sci-Fi</a></li>
+                            <li><a href="index.html#categories">History</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3 class="footer-title">Contact</h3>
+                        <p>123 Library Street<br>Knowledge City, KC 12345</p>
+                        <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                        <p><a href="mailto:info@imperiallibrary.com">info@imperiallibrary.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="#" target="_blank" class="social-link" aria-label="Facebook">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="#" target="_blank" class="social-link" aria-label="Instagram">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" class="social-link" aria-label="Twitter">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="#" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                </div>
+                <p class="footer-copyright">&copy; 2025 Imperial Library. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/home2.js"></script>
+</body>
+</html>
+

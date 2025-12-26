@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperial Library - Discover Your Next Great Read</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Yeseva+One&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">Imperial Library</span>
+                <i data-feather="book-open" class="logo-icon"></i>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="home2.html" class="nav-link">Home 2</a></li>
+                <li><a href="#browse" class="nav-link">Browse Books</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="dashboard.html" class="nav-link-btn">Dashboard</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <i data-feather="menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-particles"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Your Next Great Read</h1>
+            <h2 class="hero-subtitle">Immerse yourself in a world of knowledge and imagination</h2>
+            <div class="hero-search">
+                <input type="text" placeholder="Search by title, author, or genre..." class="hero-search-input">
+                <button class="btn-primary">
+                    <i data-feather="search"></i>
+                    Search
+                </button>
+            </div>
+            <div class="hero-cta">
+                <a href="#browse" class="btn-primary">Browse Collection</a>
+                <a href="#contact" class="btn-secondary">Submit Review</a>
+            </div>
+        </div>
+        <div class="hero-emerald-rays"></div>
+    </section>
+
+    <!-- FEATURED BOOKS -->
+    <section id="featured" class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Featured Books</h2>
+            <div class="featured-carousel">
+                <button class="carousel-btn prev" id="prevBtn">
+                    <i data-feather="chevron-left"></i>
+                </button>
+                <div class="carousel-container" id="carouselContainer">
+                    <div class="book-card featured">
+                        <div class="book-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400" alt="The Art of Reading by Jane Smith - Book Cover" loading="lazy" width="400" height="350">
+                            <div class="book-overlay"></div>
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">The Art of Reading</h3>
+                            <p class="book-author">By Jane Smith</p>
+                            <div class="book-rating">
+                                <i data-feather="star" class="star filled"></i>
+                                <i data-feather="star" class="star filled"></i>
+                                <i data-feather="star" class="star filled"></i>
+                                <i data-feather="star" class="star filled"></i>
+                                <i data-feather="star" class="star filled"></i>
+                                <span>5.0</span>
+                            </div>
+                            <p class="book-description">A comprehensive guide to mastering the art of reading and comprehension.</p>
+                            <button class="btn-card">Read More</button>
+                        </div>
+                    </div>
+                    <div class="book-card featured">
+                        <div class="book-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400" alt="Ancient Wisdom by Robert Chen - Book Cover" loading="lazy" width="400" height="350">
+                            <div class="book-overlay"></div>
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">Ancient Wisdom</h3>
+                            <p class="book-author">By Robert Chen</p>
+                            <div class="book-rating">
+                                <i data-feather="star" class="star filled"></i>
+                                <i data-feather="star" class="star filled"></i>
+                                <i data-feather="star" class="star filled"></i>
+                                <i data-feather="star" class="star filled"></i>
+                                <i data-feather="star" class="star"></i>
+                                <span>4.5</span>
+                            </div>
+                            <p class="book-description">Exploring timeless wisdom from ancient civilizations and philosophies.</p>
+                            <button class="btn-card">Read More</button>
+                        </div>
+                    </div>
+                    <div class="book-card featured">
+                        <div class="book-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Modern Literature by Emily Johnson - Book Cover" loading="lazy" width="400" height="350">
+                            <div class="book-overlay"></div>
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">Modern Literature</h3>
+                            <p class="book-author">By Emily Johnson</p>
+                            <div class="book-rating">
+                                <i data-feather="star" class="star filled"></i>
+                                <i data-feather="star" class="star filled"></i>
+                                <i data-feather="star" class="star filled"></i>
+                                <i data-feather="star" class="star filled"></i>
+                                <i data-feather="star" class="star filled"></i>
+                                <span>5.0</span>
+                            </div>
+                            <p class="book-description">A collection of contemporary stories that resonate with modern readers.</p>
+                            <button class="btn-card">Read More</button>
+                        </div>
+                    </div>
+                    <div class="book-card featured">
+                        <div class="book-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=400" alt="Science & Discovery by Dr. Michael Brown - Book Cover" loading="lazy" width="400" height="350">
+                            <div class="book-overlay"></div>
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">Science & Discovery</h3>
+                            <p class="book-author">By Dr. Michael Brown</p>
+                            <div class="book-rating">
+                                <i data-feather="star" class="star filled"></i>
+                                <i data-feather="star" class="star filled"></i>
+                                <i data-feather="star" class="star filled"></i>
+                                <i data-feather="star" class="star filled"></i>
+                                <i data-feather="star" class="star"></i>
+                                <span>4.8</span>
+                            </div>
+                            <p class="book-description">Unveiling the mysteries of science and groundbreaking discoveries.</p>
+                            <button class="btn-card">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" id="nextBtn">
+                    <i data-feather="chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- BROWSE BOOKS -->
+    <section id="browse" class="browse-section">
+        <div class="container">
+            <h2 class="section-title">Browse Books</h2>
+            <div class="filter-container">
+                <select class="filter-select" id="genreFilter">
+                    <option value="all">All Genres</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="non-fiction">Non-Fiction</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                    <option value="history">History</option>
+                    <option value="philosophy">Philosophy</option>
+                </select>
+                <select class="filter-select" id="authorFilter">
+                    <option value="all">All Authors</option>
+                    <option value="jane-smith">Jane Smith</option>
+                    <option value="robert-chen">Robert Chen</option>
+                    <option value="emily-johnson">Emily Johnson</option>
+                    <option value="michael-brown">Michael Brown</option>
+                </select>
+                <select class="filter-select" id="ratingFilter">
+                    <option value="all">All Ratings</option>
+                    <option value="5">5 Stars</option>
+                    <option value="4">4+ Stars</option>
+                    <option value="3">3+ Stars</option>
+                </select>
+                <select class="filter-select" id="yearFilter">
+                    <option value="all">All Years</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                </select>
+            </div>
+            <div class="books-grid" id="booksGrid">
+                <div class="book-card" data-genre="fiction" data-author="jane-smith" data-rating="5" data-year="2024">
+                    <div class="book-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=300" alt="The Enchanted Forest by Jane Smith - Book Cover" loading="lazy" width="300" height="350">
+                        <div class="book-overlay"></div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">The Enchanted Forest</h3>
+                        <p class="book-author">By Jane Smith</p>
+                        <div class="book-rating">
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <span>5.0</span>
+                        </div>
+                        <p class="book-description">A magical journey through an enchanted forest filled with wonder.</p>
+                        <button class="btn-card">View Details</button>
+                    </div>
+                </div>
+                <div class="book-card" data-genre="non-fiction" data-author="robert-chen" data-rating="4" data-year="2023">
+                    <div class="book-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300" alt="Eastern Philosophy by Robert Chen - Book Cover" loading="lazy" width="300" height="350">
+                        <div class="book-overlay"></div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Eastern Philosophy</h3>
+                        <p class="book-author">By Robert Chen</p>
+                        <div class="book-rating">
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star"></i>
+                            <span>4.5</span>
+                        </div>
+                        <p class="book-description">Deep insights into Eastern philosophical traditions and practices.</p>
+                        <button class="btn-card">View Details</button>
+                    </div>
+                </div>
+                <div class="book-card" data-genre="mystery" data-author="emily-johnson" data-rating="5" data-year="2024">
+                    <div class="book-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300" alt="The Midnight Mystery by Emily Johnson - Book Cover" loading="lazy" width="300" height="350">
+                        <div class="book-overlay"></div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">The Midnight Mystery</h3>
+                        <p class="book-author">By Emily Johnson</p>
+                        <div class="book-rating">
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <span>5.0</span>
+                        </div>
+                        <p class="book-description">A thrilling mystery that keeps you guessing until the very end.</p>
+                        <button class="btn-card">View Details</button>
+                    </div>
+                </div>
+                <div class="book-card" data-genre="sci-fi" data-author="michael-brown" data-rating="4" data-year="2023">
+                    <div class="book-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=300" alt="Future Horizons by Michael Brown - Book Cover" loading="lazy" width="300" height="350">
+                        <div class="book-overlay"></div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Future Horizons</h3>
+                        <p class="book-author">By Michael Brown</p>
+                        <div class="book-rating">
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star"></i>
+                            <span>4.8</span>
+                        </div>
+                        <p class="book-description">A vision of the future through the lens of science fiction.</p>
+                        <button class="btn-card">View Details</button>
+                    </div>
+                </div>
+                <div class="book-card" data-genre="history" data-author="jane-smith" data-rating="5" data-year="2022">
+                    <div class="book-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=300" alt="Ancient Empires by Jane Smith - Book Cover" loading="lazy" width="300" height="350">
+                        <div class="book-overlay"></div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Ancient Empires</h3>
+                        <p class="book-author">By Jane Smith</p>
+                        <div class="book-rating">
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <span>5.0</span>
+                        </div>
+                        <p class="book-description">Exploring the rise and fall of ancient civilizations.</p>
+                        <button class="btn-card">View Details</button>
+                    </div>
+                </div>
+                <div class="book-card" data-genre="philosophy" data-author="robert-chen" data-rating="4" data-year="2021">
+                    <div class="book-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300" alt="Wisdom of Ages by Robert Chen - Book Cover" loading="lazy" width="300" height="350">
+                        <div class="book-overlay"></div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Wisdom of Ages</h3>
+                        <p class="book-author">By Robert Chen</p>
+                        <div class="book-rating">
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star filled"></i>
+                            <i data-feather="star" class="star"></i>
+                            <span>4.6</span>
+                        </div>
+                        <p class="book-description">Timeless philosophical insights from great thinkers.</p>
+                        <button class="btn-card">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOK REVIEWS -->
+    <section id="reviews" class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">Recent Reviews</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" alt="The Art of Reading by Jane Smith - Book Cover" class="review-thumbnail" loading="lazy" width="100" height="120">
+                        <div class="review-meta">
+                            <h3 class="review-book-title">The Art of Reading</h3>
+                            <p class="review-author">Reviewed by 
+Williams</p>
+                            <p class="review-date">March 15, 2024</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <i data-feather="star" class="star filled"></i>
+                        <i data-feather="star" class="star filled"></i>
+                        <i data-feather="star" class="star filled"></i>
+                        <i data-feather="star" class="star filled"></i>
+                        <i data-feather="star" class="star filled"></i>
+                    </div>
+                    <p class="review-excerpt">"This book completely transformed my reading experience. The insights are profound and the writing style is engaging. Highly recommend to anyone looking to improve their reading skills."</p>
+                    <button class="btn-card">Read Full Review</button>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=100" alt="Ancient Wisdom by Robert Chen - Book Cover" class="review-thumbnail" loading="lazy" width="100" height="120">
+                        <div class="review-meta">
+                            <h3 class="review-book-title">Ancient Wisdom</h3>
+                            <p class="review-author">Reviewed by David Lee</p>
+                            <p class="review-date">March 12, 2024</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <i data-feather="star" class="star filled"></i>
+                        <i data-feather="star" class="star filled"></i>
+                        <i data-feather="star" class="star filled"></i>
+                        <i data-feather="star" class="star filled"></i>
+                        <i data-feather="star" class="star"></i>
+                    </div>
+                    <p class="review-excerpt">"A fascinating exploration of ancient philosophies. The author does an excellent job of making complex concepts accessible. The historical context adds great depth to the narrative."</p>
+                    <button class="btn-card">Read Full Review</button>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" alt="Modern Literature by Emily Johnson - Book Cover" class="review-thumbnail" loading="lazy" width="100" height="120">
+                        <div class="review-meta">
+                            <h3 class="review-book-title">Modern Literature</h3>
+                            <p class="review-author">Reviewed by Maria Garcia</p>
+                            <p class="review-date">March 10, 2024</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <i data-feather="star" class="star filled"></i>
+                        <i data-feather="star" class="star filled"></i>
+                        <i data-feather="star" class="star filled"></i>
+                        <i data-feather="star" class="star filled"></i>
+                        <i data-feather="star" class="star filled"></i>
+                    </div>
+                    <p class="review-excerpt">"Beautifully written stories that capture the essence of modern life. Each story is unique and thought-provoking. This collection is a must-read for contemporary literature fans."</p>
+                    <button class="btn-card">Read Full Review</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section id="categories" class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Browse by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <i data-feather="book" class="category-icon"></i>
+                    <h3 class="category-name">Fiction</h3>
+                    <p class="category-count">1,234 Books</p>
+                </div>
+                <div class="category-card">
+                    <i data-feather="file-text" class="category-icon"></i>
+                    <h3 class="category-name">Non-Fiction</h3>
+                    <p class="category-count">856 Books</p>
+                </div>
+                <div class="category-card">
+                    <i data-feather="search" class="category-icon"></i>
+                    <h3 class="category-name">Mystery</h3>
+                    <p class="category-count">542 Books</p>
+                </div>
+                <div class="category-card">
+                    <i data-feather="zap" class="category-icon"></i>
+                    <h3 class="category-name">Sci-Fi</h3>
+                    <p class="category-count">678 Books</p>
+                </div>
+                <div class="category-card">
+                    <i data-feather="clock" class="category-icon"></i>
+                    <h3 class="category-name">History</h3>
+                    <p class="category-count">423 Books</p>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About the Library</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="about-subtitle">Our Mission</h3>
+                    <p>At Imperial Library, we are dedicated to preserving knowledge and fostering a love for reading. Our mission is to provide access to a vast collection of books spanning all genres and eras, creating a sanctuary for readers and scholars alike.</p>
+                    <p>We believe that books are gateways to different worlds, perspectives, and ideas. Through our carefully curated collection and community-driven reviews, we aim to inspire lifelong learning and intellectual curiosity.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <i data-feather="book-open" class="stat-icon"></i>
+                        <h3 class="stat-number">10,000+</h3>
+                        <p class="stat-label">Total Books</p>
+                    </div>
+                    <div class="stat-card">
+                        <i data-feather="users" class="stat-icon"></i>
+                        <h3 class="stat-number">5,000+</h3>
+                        <p class="stat-label">Active Members</p>
+                    </div>
+                    <div class="stat-card">
+                        <i data-feather="star" class="stat-icon"></i>
+                        <h3 class="stat-number">15,000+</h3>
+                        <p class="stat-label">Reviews</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-forms">
+                    <div class="form-container">
+                        <h3 class="form-title">Submit a Review</h3>
+                        <form class="contact-form" id="reviewForm">
+                            <input type="text" placeholder="Book Title" required>
+                            <input type="text" placeholder="Author Name" required>
+                            <select required>
+                                <option value="">Select Rating</option>
+                                <option value="5">5 Stars</option>
+                                <option value="4">4 Stars</option>
+                                <option value="3">3 Stars</option>
+                                <option value="2">2 Stars</option>
+                                <option value="1">1 Star</option>
+                            </select>
+                            <textarea placeholder="Your Review" rows="5" required></textarea>
+                            <button type="submit" class="btn-primary">Submit Review</button>
+                        </form>
+                    </div>
+                    <div class="form-container">
+                        <h3 class="form-title">Send Us a Message</h3>
+                        <form class="contact-form" id="contactForm">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                            <input type="text" placeholder="Subject" required>
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i data-feather="map-pin" class="info-icon"></i>
+                        <h3>Location</h3>
+                        <p>123 Library Street<br>Knowledge City, KC 12345</p>
+                    </div>
+                    <div class="info-card">
+                        <i data-feather="clock" class="info-icon"></i>
+                        <h3>Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 8:00 PM<br>Saturday - Sunday: 10:00 AM - 6:00 PM</p>
+                    </div>
+                    <div class="info-card">
+                        <i data-feather="phone" class="info-icon"></i>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                    </div>
+                    <div class="info-card">
+                        <i data-feather="mail" class="info-icon"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@imperiallibrary.com">info@imperiallibrary.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1841321915747!2d-73.98811768459368!3d40.75889597932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <a href="#home" class="footer-logo">
+                    <span class="logo-text">Imperial Library</span>
+                    <i data-feather="book-open" class="logo-icon"></i>
+                </a>
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3 class="footer-title">About</h3>
+                        <p>Imperial Library is a premier destination for book lovers, offering an extensive collection and a vibrant community of readers.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3 class="footer-title">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="home2.html">Home 2</a></li>
+                            <li><a href="dashboard.html">Dashboard</a></li>
+                            <li><a href="#browse">Browse Books</a></li>
+                            <li><a href="#reviews">Reviews</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3 class="footer-title">Categories</h3>
+                        <ul class="footer-links">
+                            <li><a href="#categories">Fiction</a></li>
+                            <li><a href="#categories">Non-Fiction</a></li>
+                            <li><a href="#categories">Mystery</a></li>
+                            <li><a href="#categories">Sci-Fi</a></li>
+                            <li><a href="#categories">History</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3 class="footer-title">Contact</h3>
+                        <p>123 Library Street<br>Knowledge City, KC 12345</p>
+                        <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                        <p><a href="mailto:info@imperiallibrary.com">info@imperiallibrary.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="#" target="_blank" class="social-link" aria-label="Facebook">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="#" target="_blank" class="social-link" aria-label="Instagram">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" class="social-link" aria-label="Twitter">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="#" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                </div>
+                <p class="footer-copyright">&copy; 2025 Imperial Library. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-book"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
